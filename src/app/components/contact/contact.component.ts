@@ -36,10 +36,10 @@ export class ContactComponent {
   }
 
   onSubmit() {
-    this.connectionService.submitEntry(this.contactForm.value).subscribe(
+    this.connectionService.submitForm(this.contactForm.value).subscribe(
        () => {
          this.contactForm.reset();
-         this.router.navigateByUrl('/success');
+        //  this.router.navigateByUrl('/');
        },
        err => {
          this.errorMsg = err;

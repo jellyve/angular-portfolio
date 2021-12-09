@@ -11,6 +11,15 @@ export class ConnectionService {
 
   constructor(private http: HttpClient) { }
 
+  submitForm(fbEntry: Feedback): Observable<any> {
+    const entry = new HttpParams({ fromObject: {
+      'form-name': 'contactForm',
+      ...fbEntry
+    }});
+
+    return this.submitEntry(entry);
+  }
+
   submitEntry(entry: HttpParams): Observable<any> {
     return this.http.post(
       '/',
