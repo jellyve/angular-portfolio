@@ -6,8 +6,22 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
+  <form name="contactForm" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="contactFormName">
+    <input type="email" name="contactFormEmail">
+    <select name="contactFormSubjects">
+      <option value="" disabled>Choose option</option>
+      <option value="1" selected>Feedback</option>
+      <option value="2">Report a bug</option>
+      <option value="3">Feature request</option>
+    </select>
+    <textarea name="contactFormMessage"></textarea>  
+  </form>
   <app-root></app-root>
 </body>
 </html>
