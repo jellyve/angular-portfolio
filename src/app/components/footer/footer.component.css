@@ -1,3 +1,7 @@
 .hidden{
     display: none;
 }
+
+.footer-nav{
+    height: 4rem;
+}

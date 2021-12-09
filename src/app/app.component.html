@@ -1,12 +1,17 @@
-<app-nav></app-nav>
-<div class="container p-5">
-  <div class="row">
-    <div class="col-xl"></div>
-    <div class="col-xl-10">
-      
-      <router-outlet></router-outlet>
+<div class="page-container">
+  <div class="non-footer">
+    <app-nav></app-nav>
+    <div class="content container p-5">
+      <div class="row">
+        <div class="col-xl"></div>
+        <div class="router-outlet-container col-xl-10">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-xl"></div>
+      </div>
     </div>
-    <div class="col-xl"></div>
+  </div>
+  <div class="footer-container">
+    <app-footer></app-footer>
   </div>
 </div>
-<app-footer></app-footer>

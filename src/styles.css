@@ -1,23 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    border-left: 10px solid #6d597a;
-    border-right: 10px solid #6d597a;
-    height: 100%;
-    background-color: white;
+  border-left: 10px solid #6d597a;
+  border-right: 10px solid #6d597a;
+  /* height: 100%; */
+  background-color: white;
   background-size: 10px 10px;
   background-image:
     linear-gradient(to right, #FCFCFF 1px, transparent 1px),
     linear-gradient(to bottom, #FCFCFF 1px, transparent 1px);
 }
 
-div#container {
-    position:relative; /* needed for footer positioning*/
-    margin:0 auto; /* center, not in IE5 */
-    width:750px;
-    /* background:#f0f0f0; */
-
-    height:auto !important; /* real browsers */
-    height:100%; /* IE6: treaded as min-height*/
-
-    min-height:100%; /* real browsers */
+body {
+  margin: 0;
+  padding: 0;
+  /* height:auto !important; 
+  height: 100vh;
+  min-height:100vh;  */
 }

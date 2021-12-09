@@ -2,6 +2,7 @@ import { ConnectionService } from '../../services/connection/connection.service'
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+declare const alert: any;
 
 @Component({
   selector: 'app-contact',
@@ -27,18 +28,18 @@ export class ContactComponent {
     ) {
 
   this.contactForm = fb.group({
-    'contactFormName': ['eve', Validators.required],
-    'contactFormEmail': ['eve.a.joyce@gmail.com', Validators.compose([Validators.required, Validators.email])],
+    'contactFormName': ['', Validators.required],
+    'contactFormEmail': ['', Validators.compose([Validators.required, Validators.email])],
     'contactFormSubjects': ['1', Validators.required],
-    'contactFormMessage': ['test', Validators.required],
-    'contactFormCopy': [''],
+    'contactFormMessage': ['', Validators.required]
     });
   }
 
   onSubmit() {
     this.connectionService.submitForm(this.contactForm.value).subscribe(
        () => {
-         this.contactForm.reset();
+        this.contactForm.reset();
+        alert('Thank you for your message','info');
         //  this.router.navigateByUrl('/');
        },
        err => {

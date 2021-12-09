@@ -1,33 +1,49 @@
-<h1 class="display-4">Hello!</h1>
+<div id="liveAlertPlaceholder"></div>
+<p class="lead">You can reach me via socials:</p>
+<div class="social-links container text-center">
+    <a class="mx-2 link-secondary" href="https://www.facebook.com/eveajoyce"><i title="Facebook" class="social-link bi-facebook"></i></a>
+    <a class="mx-2 link-secondary" href="https://www.m.me/eveajoyce"><i title="Messenger" class="social-link bi-messenger"></i></a>
+    <a class="mx-2 link-secondary" href="https://github.com/jellyve"><i title="Github" class="social-link bi-github"></i></a>
+    <a class="mx-2 link-secondary" href="mailto:eve.a.joyce@outlook.com"><i title="Email" class="social-link bi-envelope-fill"></i></a>
+    <br>
+    <a class="mx-2 link-secondary text-decoration-none" href="tel:+61418549699"><i title="Telephone" class="social-link bi-telephone-fill"></i> (+61) 0418 549 699</a>
+</div>
+<p class="lead">Or via the contact form below:</p>
+<form name="contactForm" class="form-group text-center border border-light p-5 bg-white" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <p class="h4 mb-4">Contact me</p>
 
-<form name="contactForm" class="form-group text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <p class="h4 mb-4">Contact us</p>
-  
-    <!-- Name -->
-    <input type="text" name="contactFormName" formControlName="contactFormName" id="defaultContactFormName"
-      class="form-control mb-4" placeholder="Name">
-  
-    <!-- Email -->
-    <input type="email" name="contactFormEmail" formControlName="contactFormEmail" id="defaultContactFormEmail"
-      class="form-control mb-4" placeholder="E-mail">
-  
-    <!-- Subject -->
-    <label>Subject</label>
-    <select name="contactFormSubjects" formControlName="contactFormSubjects" class="form-control mb-4">
-      <option value="" disabled>Choose option</option>
-      <option value="1" selected>Feedback</option>
-      <option value="2">Report a bug</option>
-      <option value="3">Feature request</option>
-    </select>
-  
-    <!-- Message -->
-    <div class="form-group">
-      <textarea name="contactFormMessage" formControlName="contactFormMessage" class="form-control rounded-0" id="exampleFormControlTextarea2"
-        rows="3" placeholder="Message"></textarea>
-    </div>
-  
-    <!-- Send button -->
-    <button color="info" outline="true" block="true" class="z-depth-0 my-4"
-       type="submit" [disabled]="disabledSubmitButton">Send</button>
-  
+  <!-- Name -->
+  <input type="text" name="contactFormName" formControlName="contactFormName" id="defaultContactFormName"
+    class="form-control mb-4" placeholder="Name">
+
+  <!-- Email -->
+  <input type="email" name="contactFormEmail" formControlName="contactFormEmail" id="defaultContactFormEmail"
+    class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Subject -->
+  <div class="row align-items-center mb-4">
+      <div class="col-auto">
+          <label for="contactFormSubjects">Subject</label>
+      </div>
+      <div class="col-auto">
+          <select id="contactFormSubjects" name="contactFormSubjects" formControlName="contactFormSubjects" class="form-select">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>General Enquiry</option>
+            <option value="2">Job Offer</option>
+            <option value="3">Report a bug</option>
+            <option value="4">Feedback</option>
+          </select>
+      </div>
+  </div>
+
+  <!-- Message -->
+  <div class="form-group mb-4">
+    <textarea name="contactFormMessage" formControlName="contactFormMessage" class="form-control rounded-0" id="exampleFormControlTextarea2"
+      rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <!-- Send button -->
+  <div class="form-group">
+    <button class="btn btn-outline-dark" type="submit" [disabled]="disabledSubmitButton">Send</button>
+  </div>
 </form>
