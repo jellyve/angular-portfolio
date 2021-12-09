@@ -5,5 +5,7 @@
     font-family: 'Great Vibes', cursive;
 }
 .header-nav{
+    margin-left: -10px;
+    margin-right: -10px;
     width:100vw;
 }
