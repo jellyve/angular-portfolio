@@ -12,6 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ConnectionService } from './services/connection/connection.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceEducationComponent } from './components/experience-education/experience-education.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     NavComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    SkillsComponent,
+    ExperienceEducationComponent
   ],
   imports: [
     BrowserModule,

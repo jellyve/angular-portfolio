@@ -1,31 +1,34 @@
 <div class="jumbotron">
-    <h1 class="display-4">Hello!</h1>
-    <p class="lead">
+    <h1 class="display-4 mb-4">Hello!</h1>
+    <p class="lead mb-4">
       I'm Eve Joyce, an ex-data analyst who realised I wanted to get more into the nitty-gritty of progamming! I'm looking for a job at the moment, so if you know of any opportunities, I'd love to <a routerLink="/contact">hear from you</a>!
     </p>
     <hr class="my-4">
-    <p>
+    <div class="lead mb-4">
+      <p class="mb-4">
         I work in various platforms and technologies across the full stack, but I'm always keen to learn more:
-    </p>
-    <div class="container">
-      <dl class="row">
-        <dt class="col-sm-3">Front-end</dt>
-        <dd class="col-sm-9">JavaScript/TypeScript/Angular, HTML/CSS</dd>
-        
-        <dt class="col-sm-3">Middleware</dt>
-        <dd class="col-sm-9">C# (Asp.NET)</dd>
-        
-        <dt class="col-sm-3">Back-end</dt>
-        <dd class="col-sm-9">SQL (Microsoft SQL Server, TSQL)</dd>
-        
-        <dt class="col-sm-3">Data Analysis</dt>
-        <dd class="col-sm-9">SAS, R, Microsoft Excel/Access</dd>
+      </p>
+      <dl class="row justify-content-center">
+        <dt class="col-md-3">Front-end</dt>
+        <dd class="col-md-6">React/Angular, JavaScript/TypeScript, HTML/CSS</dd>
+      </dl>
+      <dl class="row justify-content-center">
+        <dt class="col-md-3">Middleware</dt>
+        <dd class="col-md-6">C# (Asp.NET)</dd>
+      </dl>
+      <dl class="row justify-content-center">
+        <dt class="col-md-3">Back-end</dt>
+        <dd class="col-md-6">SQL (Microsoft SQL Server, TSQL)</dd>
+      </dl>
+      <dl class="row justify-content-center">
+        <dt class="col-md-3">Data Analysis</dt>
+        <dd class="col-md-6">SAS, R, Microsoft Excel/Access</dd>
       </dl>
     </div>
     <hr class="my-4">
-    <h2>Check out some of my projects:</h2>
+    <h6 class="display-6 mb-4">Check out some of my projects:</h6>
   </div>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../assets/thursday.jpg" class="d-block w-100" alt="...">
@@ -45,4 +48,15 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <hr class="my-4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center my-4">Interested in working with me?</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <a type="button" routerLink="/contact" class="btn btn-lg btn-outline-dark col-auto lead fst-italic fs-4">Contact me <span class="arrow-right">→</span></a>
+    </div>
   </div>

@@ -1,1 +1,26 @@
-<p>resume works!</p>
+<h1 class="display-5 mb-4">Eve Joyce - Developer, Programmer, Analyst</h1>
+<div id="objective" class="mb-4">
+    <h6 class="display-6 fs-3 px-3">Career Objective</h6>
+    <blockquote class="blockquote mb-4">
+        <p> 
+            <i class="bi-quote bi-lg me-2"></i>
+            <span class="font-italic">{{this.resume.objective}}</span>
+        </p>
+    </blockquote>
+</div>
+<div id="langEnv" class="mb-4">
+    <h6 class="display-6 fs-3 px-3">Languages and Environments</h6>
+    <app-skills [skillList]="this.resume.langEnv" [ticks]=false></app-skills>
+</div>
+<div id="skills" class="mb-4">
+    <h6 class="display-6 fs-3 px-3">Skills</h6>
+    <app-skills [skillList]="this.resume.skills" [ticks]=false></app-skills>
+</div>
+<div id="expEdu" class="mb-4">
+    <h6 class="display-6 fs-3 px-3">Timeline</h6>
+    <app-experience-education [expEduList]="this.resume.expEdu"></app-experience-education>
+</div>
+<div id="awards" class="mb-4">
+    <h6 class="display-6 fs-3 px-3">Awards</h6>
+    <app-skills [skillList]="this.resume.awards" [ticks]=false></app-skills>
+</div>

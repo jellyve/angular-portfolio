@@ -1,1 +1,14 @@
-<p>portfolio works!</p>
+<h1 class="display-4 mb-4">Projects!</h1>
+<div
+  class="project-card mb-5"
+  *ngFor="let project of projectList"
+>
+  <h2>{{ project.title }}</h2>
+  <app-skills [skillList]="project.technologies" [ticks]=true></app-skills>
+  <p class="lead mt-2 mb-4">Description: {{ project.description }}</p>
+  <img src="project.image" class="d-block w-100" alt="screenshot of {{project.title}}">
+  <div class="d-flex flex-row flex-wrap gap-2">
+    <a role="button" class="btn btn-primary" href="{{ project.link }}"><i class="bi-link-45deg"></i> Link to {{ project.title }}</a>
+    <a role="button" class="btn btn-primary"  href="{{ project.source }}"><i class="bi-github"></i> Link to {{ project.title }} Source Code</a>
+  </div>
+</div>

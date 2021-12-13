@@ -1,0 +1,27 @@
+<div class="container-fluid p-0 border-start border-end">
+    <div class="row p-1">
+        <div class="col-6 text-start"><h4>Education</h4></div>
+        <div class="col-6 text-end"><h4>Professional Experience</h4></div>
+    </div>
+    <div *ngFor="let e of expEduList" class="row p-1 mb-1" [class.justify-content-start]="this.eduTest(e.type)" [class.justify-content-end]="this.proTest(e.type)">
+        <div class="col-11 border p-4" [class.text-start]="this.eduTest(e.type)" [class.text-end]="this.proTest(e.type)">
+            <h5 class="mt-2">{{e.institution}} - {{e.title}}</h5>
+            <p class="lead mb-0">{{e.start}} - {{e.end}}</p>
+            <dl *ngIf="e.responsibilities[0]">
+                <dt>Role responsibilities</dt>
+                <dd><i class="bi-forward bi-lg"></i> {{e.responsibilities[0]}}</dd>
+                <dd *ngIf="e.responsibilities[1]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[1]}}</dd>
+                <dd *ngIf="e.responsibilities[2]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[2]}}</dd>
+                <dd *ngIf="e.responsibilities[3]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[3]}}</dd>
+            </dl>
+            <dl *ngIf="e.achievements[0]">
+                <dt>Role achievements</dt>
+                <dd><i class="bi-check-square bi-lg"></i> {{e.achievements[0]}}</dd>
+                <dd *ngIf="e.achievements[1]"><i class="bi-check-square bi-lg"></i> {{e.achievements[1]}}</dd>
+                <dd *ngIf="e.achievements[2]"><i class="bi-check-square bi-lg"></i> {{e.achievements[2]}}</dd>
+                <dd *ngIf="e.achievements[3]"><i class="bi-check-square bi-lg"></i> {{e.achievements[3]}}</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+

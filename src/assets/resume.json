@@ -1,0 +1,99 @@
+{
+  "objective": "Having recently completed upskilling via further education, I am looking for an opportunity to apply programming skills I refined during this study, while expanding my skills and abilities in a new domain/industry.",
+  "langEnv": ["JavaScript","TypeScript","Angular","React","HTML","CSS","C#", "Asp.NET", "SQL", "Microsoft SQL Server", "TSQL"],
+  "skills": ["Communication", "Analysis", "Problem Solving", "Documentation"],
+  "expEdu":
+  [
+    {
+      "type":"edu",
+      "institution":"Swinburne",
+      "title":"Certificate IV (Information Technology)",
+      "start":"2021",
+      "end":"2021",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"pro",
+      "institution":"illion Australia and New Zealand",
+      "title":"Predictive Analyst",
+      "start":"2016",
+      "end":"2019",
+      "responsibilities":["Producing statistical and analytical reporting in an accurate and timely manner.","Producing data analytical modelling solutions for various financial products.","Presenting and communicating analytical insights to external parties with a range of data experience.","Handling information in accordance with all relevant regulations, in particular Part IIIA of the Privacy Act (1998)."],
+      "achievements":["Implemented scoring models for both new and existing clients, both external and internal. Most notably, implemented a scorecard model for a previously unmodelled market segment (unincorporated entities)."]
+    },
+    {
+      "type":"pro",
+      "institution":"illion Australia and New Zealand",
+      "title":"Business Analyst",
+      "start":"2014",
+      "end":"2016",
+      "responsibilities":["Liaising with non-technical (financial business) clients to collect and document business requirements.","Translating business requirements into technical requirements and working with development staff to produce software solutions.","Administration of software development and testing in JIRA/Atlassian environment."],
+      "achievements":["Implemented Mortgage loan originations at major (tier 2) financial institution (Credit Union)."]
+    },
+    {
+      "type":"pro",
+      "institution":"Epilepsy Op Shop Blackburn",
+      "title":"Volunteer",
+      "start":"2014",
+      "end":"2014",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"pro",
+      "institution":"Monash University",
+      "title":"Teaching Associate",
+      "start":"2013",
+      "end":"2014",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"pro",
+      "institution":"Freelance",
+      "title":"Tutor (Mathematics/Guitar)",
+      "start":"2009",
+      "end":"2013",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"edu",
+      "institution":"Monash University",
+      "title":"Bachelor of Science (Honours) - Pure Mathematics",
+      "start":"2013",
+      "end":"2013",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"edu",
+      "institution":"Australian Mathematical Sciences Institute",
+      "title":"AMSI Summer School",
+      "start":"2013",
+      "end":"2013",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"edu",
+      "institution":"Monash University",
+      "title":"Bachelor of Science - Double Mathematics Major",
+      "start":"2010",
+      "end":"2012",
+      "responsibilities":[],
+      "achievements":[]
+    },
+    {
+      "type":"edu",
+      "institution":"Box Hill High School",
+      "title":"Victorian Certiﬁcate of Education, Accelerated Learning Program",
+      "start":"2004",
+      "end":"2009",
+      "responsibilities":[],
+      "achievements":[]
+    }
+  ],
+  "awards": ["Graduated Certificate IV (Information Technology) with full competency","Graduated B.Sc. Honours with grade H1, including major project ﬁnal mark of 90.42 ","Graduated Bachelor of Science Degree with GPA of 3.125","Graduated High School with ENTER of 90.15 2009"]
+}
