@@ -7,19 +7,20 @@
         <div class="col-11 border p-4" [class.text-start]="this.eduTest(e.type)" [class.text-end]="this.proTest(e.type)">
             <h5 class="mt-2">{{e.institution}} - {{e.title}}</h5>
             <p class="lead mb-0">{{e.start}} - {{e.end}}</p>
+            <p *ngIf="this.eduTest(e.type)"><i class="bi-mortarboard-fill" style="font-size: 1.5rem;"></i> {{e.grade}}</p>
             <dl *ngIf="e.responsibilities[0]">
                 <dt>Role responsibilities</dt>
-                <dd><i class="bi-forward bi-lg"></i> {{e.responsibilities[0]}}</dd>
-                <dd *ngIf="e.responsibilities[1]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[1]}}</dd>
-                <dd *ngIf="e.responsibilities[2]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[2]}}</dd>
-                <dd *ngIf="e.responsibilities[3]"><i class="bi-forward bi-lg"></i> {{e.responsibilities[3]}}</dd>
+                <dd><i class="bi-forward-fill" style="font-size: 1.2rem;"></i> {{e.responsibilities[0]}}</dd>
+                <dd *ngIf="e.responsibilities[1]"><i class="bi-forward-fill" style="font-size: 1.2rem;"></i> {{e.responsibilities[1]}}</dd>
+                <dd *ngIf="e.responsibilities[2]"><i class="bi-forward-fill" style="font-size: 1.2rem;"></i> {{e.responsibilities[2]}}</dd>
+                <dd *ngIf="e.responsibilities[3]"><i class="bi-forward-fill" style="font-size: 1.2rem;"></i> {{e.responsibilities[3]}}</dd>
             </dl>
             <dl *ngIf="e.achievements[0]">
                 <dt>Role achievements</dt>
-                <dd><i class="bi-check-square bi-lg"></i> {{e.achievements[0]}}</dd>
-                <dd *ngIf="e.achievements[1]"><i class="bi-check-square bi-lg"></i> {{e.achievements[1]}}</dd>
-                <dd *ngIf="e.achievements[2]"><i class="bi-check-square bi-lg"></i> {{e.achievements[2]}}</dd>
-                <dd *ngIf="e.achievements[3]"><i class="bi-check-square bi-lg"></i> {{e.achievements[3]}}</dd>
+                <dd><i class="bi-check-square-fill" style="font-size: 1rem;"></i> {{e.achievements[0]}}</dd>
+                <dd *ngIf="e.achievements[1]"><i class="bi-check-square-fill" style="font-size: 1rem;"></i> {{e.achievements[1]}}</dd>
+                <dd *ngIf="e.achievements[2]"><i class="bi-check-square-fill" style="font-size: 1rem;"></i> {{e.achievements[2]}}</dd>
+                <dd *ngIf="e.achievements[3]"><i class="bi-check-square-fill" style="font-size: 1rem;"></i> {{e.achievements[3]}}</dd>
             </dl>
         </div>
     </div>

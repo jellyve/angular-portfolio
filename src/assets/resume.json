@@ -1,7 +1,7 @@
 {
   "objective": "Having recently completed upskilling via further education, I am looking for an opportunity to apply programming skills I refined during this study, while expanding my skills and abilities in a new domain/industry.",
   "langEnv": ["JavaScript","TypeScript","Angular","React","HTML","CSS","C#", "Asp.NET", "SQL", "Microsoft SQL Server", "TSQL"],
-  "skills": ["Communication", "Analysis", "Problem Solving", "Documentation"],
+  "skills": ["Communication", "Problem Solving", "Analysis", "Documentation"],
   "expEdu":
   [
     {
@@ -11,7 +11,8 @@
       "start":"2021",
       "end":"2021",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":"Graduated with Full Competency"
     },
     {
       "type":"pro",
@@ -20,7 +21,8 @@
       "start":"2016",
       "end":"2019",
       "responsibilities":["Producing statistical and analytical reporting in an accurate and timely manner.","Producing data analytical modelling solutions for various financial products.","Presenting and communicating analytical insights to external parties with a range of data experience.","Handling information in accordance with all relevant regulations, in particular Part IIIA of the Privacy Act (1998)."],
-      "achievements":["Implemented scoring models for both new and existing clients, both external and internal. Most notably, implemented a scorecard model for a previously unmodelled market segment (unincorporated entities)."]
+      "achievements":["Implemented scoring models for both new and existing clients, both external and internal. Most notably, implemented a scorecard model for a previously unmodelled market segment (unincorporated entities)."],
+      "grade":""
     },
     {
       "type":"pro",
@@ -29,7 +31,8 @@
       "start":"2014",
       "end":"2016",
       "responsibilities":["Liaising with non-technical (financial business) clients to collect and document business requirements.","Translating business requirements into technical requirements and working with development staff to produce software solutions.","Administration of software development and testing in JIRA/Atlassian environment."],
-      "achievements":["Implemented Mortgage loan originations at major (tier 2) financial institution (Credit Union)."]
+      "achievements":["Implemented Mortgage loan originations at major (tier 2) financial institution (Credit Union)."],
+      "grade":""
     },
     {
       "type":"pro",
@@ -38,7 +41,8 @@
       "start":"2014",
       "end":"2014",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":""
     },
     {
       "type":"pro",
@@ -47,7 +51,8 @@
       "start":"2013",
       "end":"2014",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":""
     },
     {
       "type":"pro",
@@ -56,7 +61,8 @@
       "start":"2009",
       "end":"2013",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":""
     },
     {
       "type":"edu",
@@ -65,7 +71,8 @@
       "start":"2013",
       "end":"2013",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":"Graduated with grade H1, including major project ﬁnal mark of 90.42"
     },
     {
       "type":"edu",
@@ -74,7 +81,8 @@
       "start":"2013",
       "end":"2013",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":"Completed sucessfully"
     },
     {
       "type":"edu",
@@ -83,7 +91,8 @@
       "start":"2010",
       "end":"2012",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":"Graduated with GPA of 3.125"
     },
     {
       "type":"edu",
@@ -92,8 +101,8 @@
       "start":"2004",
       "end":"2009",
       "responsibilities":[],
-      "achievements":[]
+      "achievements":[],
+      "grade":"Graduated with ENTER of 90.15"
     }
-  ],
-  "awards": ["Graduated Certificate IV (Information Technology) with full competency","Graduated B.Sc. Honours with grade H1, including major project ﬁnal mark of 90.42 ","Graduated Bachelor of Science Degree with GPA of 3.125","Graduated High School with ENTER of 90.15 2009"]
+  ]
 }

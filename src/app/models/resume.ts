@@ -6,6 +6,7 @@ export interface Experience {
     end: string;
     responsibilities: string[];
     achievements: string[];
+    grade: string[];
 }
 
 export interface Resume {
@@ -13,5 +14,4 @@ export interface Resume {
     langEnv: string[];
     skills: string[];
     expEdu: Experience[];
-    awards: string[];
  }

@@ -13,8 +13,7 @@ export class ResumeComponent implements OnInit {
     "objective": "",
     "langEnv": [],
     "skills": [],
-    "expEdu": [],
-    "awards": []
+    "expEdu": []
   };
   private _jsonURL = 'assets/resume.json';
 
@@ -23,7 +22,7 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<Resume>(this._jsonURL).subscribe((data) => {
       this.resume = data;
-      console.log('--- result :: ',  this.resume);
+      // console.log('--- result :: ',  this.resume);
     });
   }
 

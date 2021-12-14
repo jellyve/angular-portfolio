@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/models/project';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  private _jsonURL = 'assets/projects.json';
+  projectList: Project[] = [];
 
-  ngOnInit(): void {
+  constructor(private http: HttpClient) {
+  }
+
+  ngOnInit() {
+    this.http.get<Project[]>(this._jsonURL).subscribe((data) => {
+      this.projectList = data;
+      // console.log('--- result :: ',  this.projectList);
+    });
   }
 
 }

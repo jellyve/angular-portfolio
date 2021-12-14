@@ -4,35 +4,35 @@
     "technologies": ["Angular","Bootstrap","TypeScript","Netlify Forms"],
     "description":
       "This portfolio website, coded in an Angular environment with Bootstrap styling and components. Hosted with Netlify to utilise Netlify Forms for the contact page.",
-    "image": "./project-1.gif",
-    "link": "https://reactbootcamp.com",
+    "image": "../assets/portfolio.png",
+    "link": "https://flamboyant-wozniak-d0772a.netlify.app/",
     "source": "https://github.com/jellyve/angular-portfolio"
-  },
-  {
-    "title": "No HP RPG",
-    "technologies": ["Azure","React","TypeScript"],
-    "description":
-      "Mockup of the battle interface for a Pokémon-like RPG game, where typical health bars have been replaced with written descriptions. Hosted with Azure webservices.",
-    "image": "./project-1.gif",
-    "link": "https://reactbootcamp.com",
-    "source": "https://github.com/jellyve/react-pkmn-prod"
   },
   {
     "title": "HexSweeper",
     "technologies": ["JavaScript","CSS","HTML","React"],
     "description":
       "My first for fun project, written as I learnt Javascript - a minesweeper-like game with hexagonal tiles. Extended with React to implement a high-score functionality.",
-    "image": "./project-1.gif",
-    "link": "https://reactbootcamp.com",
+    "image": "../assets/mines.png",
+    "link": "http://swin103681990.somee.com/mines/mine1.html",
     "source": "https://github.com/jellyve/mines-web"
+  },
+  {
+    "title": "No HP RPG",
+    "technologies": ["Azure","React","TypeScript"],
+    "description":
+      "Mockup of the battle interface for a Pokémon-like RPG game, where typical health bars have been replaced with written descriptions. Hosted with Azure webservices.",
+    "image": "../assets/nohprpg.png",
+    "link": "https://blue-ground-00555b51e.azurestaticapps.net/",
+    "source": "https://github.com/jellyve/react-pkmn-prod"
   },
   {
     "title": "My next Project - Random Reminder",
     "technologies": ["TBD","Mobile"],
     "description":
       "A reminder/todo App with the ability to randomise reminder times for things like 'remind me to drink water about once an hour'. Currently a web-based prototype to determine design etc.",
-    "image": "./project-1.gif",
-    "link": "https://reactbootcamp.com",
+    "image": "../assets/randomreminder.png",
+    "link": "#",
     "source": "https://github.com/jellyve/rand_proto"
   }
 ]

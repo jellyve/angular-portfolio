@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.http.get<Project[]>(this._jsonURL).subscribe((data) => {
       this.projectList = data;
-      console.log('--- result :: ',  this.projectList);
+      // console.log('--- result :: ',  this.projectList);
     });
   }
 

@@ -10,7 +10,7 @@
       </p>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Front-end</dt>
-        <dd class="col-md-6">React/Angular, JavaScript/TypeScript, HTML/CSS</dd>
+        <dd class="col-md-6">Angular, React, JavaScript/TypeScript, HTML, CSS</dd>
       </dl>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Middleware</dt>
@@ -28,7 +28,7 @@
     <hr class="my-4">
     <h6 class="display-6 mb-4">Check out some of my projects:</h6>
   </div>
-  <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../assets/thursday.jpg" class="d-block w-100" alt="...">
@@ -45,6 +45,21 @@
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <div id="carouselProjects" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let projectItem of projectList" class="carousel-item" [class.active]="projectItem==projectList[0]">
+        <a routerLink="/portfolio"><img src="{{projectItem.image}}" class="d-block w-100" alt="{{projectItem.title}}"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
