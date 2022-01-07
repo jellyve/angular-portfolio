@@ -1,0 +1,12 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$navbar-dark-color:                 rgba(#fff, .85);
+$navbar-dark-hover-color:           rgba(#fff, .9);
+$navbar-dark-active-color:          #fff;
+$navbar-dark-disabled-color:        rgba(#fff, .25);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

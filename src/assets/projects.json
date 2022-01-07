@@ -5,14 +5,14 @@
     "description":
       "This portfolio website, coded in an Angular environment with Bootstrap styling and components. Hosted with Netlify to utilise Netlify Forms for the contact page.",
     "image": "../assets/portfolio.png",
-    "link": "https://flamboyant-wozniak-d0772a.netlify.app/",
+    "link": "https://eve-joyce.netlify.app/",
     "source": "https://github.com/jellyve/angular-portfolio"
   },
   {
     "title": "HexSweeper",
     "technologies": ["JavaScript","CSS","HTML","React"],
     "description":
-      "My first for fun project, written as I learnt Javascript - a minesweeper-like game with hexagonal tiles. Extended with React to implement a high-score functionality.",
+      "My first for fun project, written as I learnt Javascript - a minesweeper-like game with hexagonal tiles. Working to extend with React to implement a high-score functionality.",
     "image": "../assets/mines.png",
     "link": "http://swin103681990.somee.com/mines/mine1.html",
     "source": "https://github.com/jellyve/mines-web"

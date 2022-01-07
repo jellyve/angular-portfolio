@@ -1,9 +1,15 @@
 /* a{
     border: 1px solid white;
 } */
+
 .name-title{
     font-family: 'Great Vibes', cursive;
 }
+
+.nav-link{
+    color:#fff;
+}
+
 .header-nav{
     margin-left: -10px;
     margin-right: -10px;
