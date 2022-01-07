@@ -1,3 +1,24 @@
 .social-link {
     font-size: 2rem;
 }
+
+.error, .validation-alert {
+    color: darkred;
+    background-color: lightsalmon;
+    border: .1rem solid crimson;
+    border-radius: .3rem;
+    padding: .5rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    display: flex;
+    width: inherit;
+}
+
+.error p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.hidden{
+    display: none;
+}

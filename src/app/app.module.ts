@@ -14,6 +14,7 @@ import { ConnectionService } from './services/connection/connection.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceEducationComponent } from './components/experience-education/experience-education.component';
+import { SuccessComponent } from './components/success/success.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ExperienceEducationComponent } from './components/experience-education/
     FooterComponent,
     ResumeComponent,
     SkillsComponent,
-    ExperienceEducationComponent
+    ExperienceEducationComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,

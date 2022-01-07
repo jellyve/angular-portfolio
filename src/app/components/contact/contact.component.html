@@ -1,4 +1,4 @@
-<div id="liveAlertPlaceholder"></div>
+<!-- <div id="liveAlertPlaceholder"></div> -->
 <p class="lead">You can reach me via socials:</p>
 <div class="social-links container text-center mb-4">
     <a class="mx-2 link-secondary" href="https://www.facebook.com/eveajoyce"><i title="Facebook" class="social-link bi-facebook"></i></a>
@@ -9,37 +9,64 @@
     <a class="mx-2 link-secondary text-decoration-none" href="tel:+61418549699"><i title="Telephone" class="social-link bi-telephone-fill"></i> (+61) 0418 549 699</a>
 </div>
 <p class="lead">Or via the contact form below:</p>
+<div class="error" [class.hidden]="errorMsg.length == 0">
+  <p>{{errorMsg}}</p>
+  <span (click)="closeError()" class="close">✖︎</span>
+</div>
 <form name="contactForm" class="form-group text-center border border-light p-5 bg-white" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <p class="h4 mb-4">Contact me</p>
 
   <!-- Name -->
-  <input type="text" name="contactFormName" formControlName="contactFormName" id="defaultContactFormName"
+  <input type="text" name="contactFormName" formControlName="contactFormName" id="contactFormName"
     class="form-control mb-4" placeholder="Name">
+  <div *ngIf="contactForm.controls['contactFormName'].invalid && (contactForm.controls['contactFormName'].dirty || contactForm.controls['contactFormName'].touched)" class="validation-alert">
+    <!-- <div *ngIf="contactForm.controls['contactFormName'].errors?.['required']"> -->
+      Name is required.
+    <!-- </div> -->
+  </div>
 
   <!-- Email -->
   <input type="email" name="contactFormEmail" formControlName="contactFormEmail" id="defaultContactFormEmail"
     class="form-control mb-4" placeholder="E-mail">
+    <div *ngIf="contactForm.controls['contactFormEmail'].invalid && (contactForm.controls['contactFormEmail'].dirty || contactForm.controls['contactFormEmail'].touched)" class="validation-alert">
+      <div *ngIf="contactForm.controls['contactFormEmail'].errors?.['required']">
+        Email is required.
+      </div>
+      <div *ngIf="contactForm.controls['contactFormEmail'].errors?.['email']">
+        Invalid email address.
+      </div>
+    </div>
 
   <!-- Subject -->
   <div class="row align-items-center mb-4">
-      <div class="col-auto">
-          <label for="contactFormSubjects">Subject</label>
-      </div>
-      <div class="col-auto">
-          <select id="contactFormSubjects" name="contactFormSubjects" formControlName="contactFormSubjects" class="form-select">
-            <option value="" disabled>Choose option</option>
-            <option value="1" selected>General Enquiry</option>
-            <option value="2">Job Offer</option>
-            <option value="3">Report a bug</option>
-            <option value="4">Feedback</option>
-          </select>
-      </div>
+    <div class="col-auto">
+      <label for="contactFormSubjects">Subject</label>
+    </div>
+    <div class="col-auto">
+      <select id="contactFormSubjects" name="contactFormSubjects" formControlName="contactFormSubjects" class="form-select">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>General Enquiry</option>
+        <option value="2">Job Offer</option>
+        <option value="3">Report a bug</option>
+        <option value="4">Feedback</option>
+      </select>
+    </div>
+  </div>
+  <div *ngIf="contactForm.controls['contactFormSubjects'].invalid && (contactForm.controls['contactFormSubjects'].dirty || contactForm.controls['contactFormSubjects'].touched)" class="validation-alert">
+    <!-- <div *ngIf="contactForm.controls['contactFormSubjects'].errors?.['required']"> -->
+      Subject is required.
+    <!-- </div> -->
   </div>
 
   <!-- Message -->
   <div class="form-group mb-4">
     <textarea name="contactFormMessage" formControlName="contactFormMessage" class="form-control rounded-0" id="exampleFormControlTextarea2"
       rows="3" placeholder="Message"></textarea>
+  </div>
+  <div *ngIf="contactForm.controls['contactFormMessage'].invalid && (contactForm.controls['contactFormMessage'].dirty || contactForm.controls['contactFormMessage'].touched)" class="validation-alert">
+    <!-- <div *ngIf="contactForm.controls['contactFormMessage'].errors?.['required']"> -->
+      Message is required.
+    <!-- </div> -->
   </div>
 
   <!-- Send button -->

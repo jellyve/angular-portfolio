@@ -35,12 +35,16 @@ export class ContactComponent {
     });
   }
 
+  closeError(){
+    this.errorMsg = '';
+  }
+
   onSubmit() {
     this.connectionService.submitForm(this.contactForm.value).subscribe(
        () => {
         this.contactForm.reset();
-        alert('Thank you for your message','info');
-        //  this.router.navigateByUrl('/');
+        // alert('Thank you for your message','info');
+        this.router.navigateByUrl('/success');
        },
        err => {
          this.errorMsg = err;
