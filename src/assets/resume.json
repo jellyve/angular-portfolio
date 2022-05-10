@@ -1,6 +1,6 @@
 {
-  "objective": "Having recently completed upskilling via further education, I am looking for an opportunity to apply programming skills I refined during this study, while expanding my skills and abilities in a new domain/industry.",
-  "langEnv": ["JavaScript","TypeScript","Angular","React","HTML","CSS","C#", "Asp.NET", "SQL", "Microsoft SQL Server", "TSQL"],
+  "objective": "After upskilling via further education, I am looking for an opportunity to apply programming skills I refined during this study, while expanding my skills and abilities in a new domain/industry.",
+  "langEnv": ["JavaScript","TypeScript","Angular","React","HTML","CSS","C#", ".NET", "SQL", "Microsoft SQL Server", "TSQL"],
   "skills": ["Communication", "Problem Solving", "Analysis", "Documentation"],
   "expEdu":
   [
