@@ -1,7 +1,7 @@
 <div class="jumbotron">
     <h1 class="display-4 mb-4">Hello!</h1>
     <p class="lead mb-4">
-      I'm Eve Joyce, an ex-data analyst who realised I wanted to get back to making things! I consider myself a business analyst and programmer. I'm looking for a job at the moment, so if you know of any opportunities, I'd love to <a routerLink="/contact">hear from you</a>!
+      I'm Eve Joyce, an ex-data analyst who realised I wanted to get back to making things! I consider myself a programmer and  business analyst. I'm looking for a job at the moment, so if you know of any opportunities, I'd love to <a routerLink="/contact">hear from you</a>!
     </p>
     <hr class="my-4">
     <div class="lead mb-4">
@@ -10,15 +10,15 @@
       </p>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Front-end</dt>
-        <dd class="col-md-6">Angular, React, JavaScript/TypeScript, HTML, CSS</dd>
+        <dd class="col-md-6">React, Angular, JavaScript/TypeScript, HTML5, CSS3</dd>
       </dl>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Middleware</dt>
-        <dd class="col-md-6">C# (.NET), SOAP, JSON, XML</dd>
+        <dd class="col-md-6">C# (.NET), Express (Node.js), Firebase, SOAP, JSON, XML</dd>
       </dl>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Back-end</dt>
-        <dd class="col-md-6">SQL (Microsoft SQL Server, TSQL)</dd>
+        <dd class="col-md-6">NoSQL, Firebase Firestore, SQL (Microsoft SQL Server, TSQL)</dd>
       </dl>
       <dl class="row justify-content-center">
         <dt class="col-md-3">Data Analysis</dt>
@@ -28,14 +28,20 @@
     <hr class="my-4">
     <h6 class="display-6 mb-4">Check out some of my projects:</h6>
   </div>
-  <div id="carouselProjects" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div id="carouselProjects" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <ng-container *ngFor="let projectItem of projectList; index as i; first as isFirst">
+        <a *ngIf="isFirst" role="button" type="button" data-bs-target="#carouselProjects" attr.data-bs-slide-to="{{i}}" class="active" aria-current="true" attr.aria-label="{{projectItem.title}}"></a>
+        <a *ngIf="!isFirst" role="button" type="button" data-bs-target="#carouselProjects" attr.data-bs-slide-to="{{i}}" attr.aria-label="{{projectItem.title}}"></a>
+      </ng-container>
+    </div>
     <div class="carousel-inner">
       <div *ngFor="let projectItem of projectList" class="carousel-item" [class.active]="projectItem==projectList[0]">
-        <a routerLink="/portfolio"><img src="{{projectItem.image}}" class="d-block w-100" alt="{{projectItem.title}}"></a>
+        <a routerLink="/portfolio" fragment="{{projectItem.title}}"><img src="{{projectItem.image}}" class="d-block w-100" alt="{{projectItem.title}}"></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">

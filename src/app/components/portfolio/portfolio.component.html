@@ -3,7 +3,7 @@
   class="project-card mb-5"
   *ngFor="let project of projectList"
 >
-  <h2>{{ project.title }}</h2>
+  <h2 id="{{ project.title }}">{{ project.title }}</h2>
   <app-skills [skillList]="project.technologies" [ticks]=true></app-skills>
   <p class="lead mt-2 mb-4">Description: {{ project.description }}</p>
   <img src="{{project.image}}" class="d-block w-100 mb-4" alt="screenshot of {{project.title}}">
