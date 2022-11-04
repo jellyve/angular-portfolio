@@ -1,4 +1,26 @@
-<h1 class="display-4 mb-4">Projects!</h1>
+<div class="jumbotron">  
+  <h2 class="display-6 mb-4">About me:</h2>
+  <!-- <hr class="my-4"> -->
+  <div class="lead mb-4">
+    <p class="mb-4">
+      I work in various platforms and technologies across the full stack, but I'm always keen to learn more:
+    </p>
+    <dl class="row justify-content-center">
+      <dt class="col-md-3">Front-end</dt>
+      <dd class="col-md-6">React, Angular, JavaScript/TypeScript, HTML5, CSS3</dd>
+    </dl>
+    <dl class="row justify-content-center">
+      <dt class="col-md-3">Middleware</dt>
+      <dd class="col-md-6">C# (.NET), Express (Node.js), Firebase, SOAP, JSON, XML</dd>
+    </dl>
+    <dl class="row justify-content-center">
+      <dt class="col-md-3">Back-end</dt>
+      <dd class="col-md-6">NoSQL, Firebase Firestore, SQL (Microsoft SQL Server, TSQL)</dd>
+    </dl>
+  </div>
+  <hr class="my-4">
+  <h6 class="display-6 mb-4">Check out some of my projects:</h6>
+</div>
 <div
   class="project-card mb-5"
   *ngFor="let project of projectList"
@@ -12,3 +34,14 @@
     <a role="button" class="btn btn-primary"  href="{{ project.source }}"><i class="bi-github"></i> Link to {{ project.title }} Source Code</a>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center my-4">Interested in getting in touch?</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <a type="button" routerLink="/contact" class="btn btn-lg btn-outline-dark col-auto lead fst-italic fs-4">Contact me <span class="arrow-right">→</span></a>
+  </div>
+</div>
+
