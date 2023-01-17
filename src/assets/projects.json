@@ -5,8 +5,8 @@
     "description":
       "Custom complex donations system for a charitable diability non-profit (EdAble). Allows for donations to associated mircro-businesses and donation campaigns, using PayPal payments. Hosted with Azure webservices. Completed as a group project during Advanced Diploma.",
     "image": "../assets/edable.png",
-    "link": "https://edable-donor.azurewebsites.net/",
-    "source": "https://github.com/EveJoyceStudent/edable-donors"
+    "link": "https://www.edable.org.au/donations",
+    "source": "https://github.com/jellyve/edable-donors"
   },
   {
     "title": "Portfolio",
