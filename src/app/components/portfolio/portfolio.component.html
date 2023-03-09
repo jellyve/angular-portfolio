@@ -3,7 +3,7 @@
   <!-- <hr class="my-4"> -->
   <div class="lead mb-4">
     <p class="mb-4">
-      I work in various platforms and technologies across the full stack, but I'm always keen to learn more:
+      I work in various platforms and technologies across the full stack, and I'm always keen to learn more:
     </p>
     <dl class="row justify-content-center">
       <dt class="col-md-3">Front-end</dt>
@@ -30,7 +30,7 @@
   <p class="lead mt-2 mb-4">Description: {{ project.description }}</p>
   <img src="{{project.image}}" class="d-block w-100 mb-4" alt="screenshot of {{project.title}}">
   <div class="d-flex flex-row flex-wrap gap-2">
-    <a role="button" class="btn btn-primary" href="{{ project.link }}"><i class="bi-link-45deg"></i> Link to {{ project.title }}</a>
+    <a *ngIf="project.link" role="button" class="btn btn-primary" href="{{ project.link }}"><i class="bi-link-45deg"></i> Link to {{ project.title }}</a>
     <a role="button" class="btn btn-primary"  href="{{ project.source }}"><i class="bi-github"></i> Link to {{ project.title }} Source Code</a>
   </div>
 </div>

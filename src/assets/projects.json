@@ -23,7 +23,7 @@
     "description":
       "My first for fun project, written as I learnt Javascript - a minesweeper-like game with hexagonal tiles. Working to extend with React to implement a high-score functionality.",
     "image": "../assets/mines.png",
-    "link": "http://swin103681990.somee.com/mines/mine1.html",
+    "link": "https://jellyve.github.io/mines-web/mine1",
     "source": "https://github.com/jellyve/mines-web"
   },
   {
@@ -32,7 +32,7 @@
     "description":
       "A reminder/todo App with the ability to randomise reminder times for things like 'remind me to drink water about once an hour'. Currently a web-based prototype to determine design etc.",
     "image": "../assets/randomreminder.png",
-    "link": "#",
+    "link": "",
     "source": "https://github.com/jellyve/rand_proto"
   }
 ]
